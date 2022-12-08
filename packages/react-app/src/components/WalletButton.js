@@ -7,7 +7,17 @@ const WalletButton = () => {
   const { ens } = useLookupAddress();
   const { account, deactivate, activateBrowserWallet } = useEthers();
 
-  const [rendered, setRendered] = useState("");
+  const [accountAddress, setAccountAddress] = useState("");
+
+  useEffect(() => {
+    if (ens) {
+      setAccountAddress(ens);
+    } else if (account) {
+      setAccountAddress(shortenAddress(account));
+    } else {
+      setAccountAddress("");
+    }
+  }, [account, ens, setAccountAddress]);
 
   return (
     <button
@@ -16,7 +26,7 @@ const WalletButton = () => {
         !account ? activateBrowserWallet() : deactivate();
       }}
     >
-      {rendered === "" ? "Connect Wallet" : rendered}
+      {accountAddress || "Connect wallet"}
     </button>
   );
 };
