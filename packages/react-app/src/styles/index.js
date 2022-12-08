@@ -1,6 +1,7 @@
 const styles = {
   // App.js
-  container: "flex justify-center min-h-screen sm:px-16 px-6 bg-site-black",
+  container:
+    "flex justify-center min-h-screen sm:px-16 px-6 bg-site-black z-10",
   innerContainer:
     "flex justify-between items-center flex-col max-w-[1280px] w-full",
   header: "flex flex-row justify-between items-center w-full sm:py-10 py-6",
@@ -33,11 +34,11 @@ const styles = {
 
   // WalletButton
   walletButton:
-    "bg-site-pink border-none outline-none px-6 py-2 font-poppins font-bold text-lg text-white rounded-3xl leading-[24px] hover:bg-pink-600 transition-all",
+    "bg-site-pink border-none outline-none px-6 py-2 font-poppins font-bold text-lg text-white rounded-3xl leading-[24px] hover:bg-pink-600 transition-all cursor-pointer",
 
   // loader
   loader: "flex justify-center items-center flex-col w-full min-h-full",
-  loaderImg: "w-56 h-56 object-contain",
+  loaderImg: "w-56 h-56 object-contain animation: animate-pulse",
   loaderText:
     "font-poppins font-normal text-dim-white text-lg text-center mt-10",
 
