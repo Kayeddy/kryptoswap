@@ -1,7 +1,10 @@
-import React from "react"
+import React from "react";
+import { useEthers } from "@usedapp/core";
+import styles from "./styles";
+import { KryptoswapLogo } from "./assets";
 
 const App = () => {
-  return <p>Hello, Web3!</p>
-}
+  return <div style={styles.container}></div>;
+};
 
 export default App;
