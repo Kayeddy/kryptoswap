@@ -24,6 +24,7 @@ const WalletButton = () => {
       className={styles.walletButton}
       onClick={() => {
         !account ? activateBrowserWallet() : deactivate();
+        console.log(account);
       }}
     >
       {accountAddress || "Connect wallet"}

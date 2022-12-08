@@ -1,4 +1,4 @@
-import { useEthers } from "@usedapp/core";
+import { useEthers, useEtherBalance } from "@usedapp/core";
 import styles from "./styles";
 import { KryptoswapLogo } from "./assets";
 import { Exchange, Loader, WalletButton } from "./components";
@@ -28,7 +28,7 @@ function App() {
               <div className={styles.exchange}>
                 {account ? (
                   poolsLoading ? (
-                    <Loader title="Loading Pools, please wait." />
+                    <Loader title="Loading Pools, please wait" />
                   ) : (
                     <Exchange />
                   )

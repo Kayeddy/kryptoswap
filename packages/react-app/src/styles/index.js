@@ -1,7 +1,7 @@
 const styles = {
   // App.js
   container:
-    "flex justify-center min-h-screen sm:px-16 px-6 bg-site-black z-10",
+    "flex justify-center min-h-screen sm:px-16 px-6 py-6 bg-site-black z-10",
   innerContainer:
     "flex justify-between items-center flex-col max-w-[1280px] w-full",
   header: "flex flex-row justify-between items-center w-full sm:py-10 py-6",
@@ -13,7 +13,7 @@ const styles = {
   exchangeBox:
     "relative md:max-w-[700px] md:min-w-[500px] min-w-full max-w-full gradient-border p-[2px] rounded-3xl",
   exchange:
-    "w-full min-h-[400px] bg-site-black backdrop-blur-[4px] rounded-3xl shadow-card flex p-10",
+    "w-full min-h-[400px] bg-site-black backdrop-blur-[4px] rounded-3xl shadow-card flex p-10 transition-all",
 
   // AmountIn & AmountOut
   amountContainer:
@@ -40,7 +40,7 @@ const styles = {
   loader: "flex justify-center items-center flex-col w-full min-h-full",
   loaderImg: "w-56 h-56 object-contain animation: animate-pulse",
   loaderText:
-    "font-poppins font-normal text-dim-white text-lg text-center mt-10",
+    "font-poppins font-normal text-dim-white text-lg text-center mt-10 animate-pulse",
 
   // balance
   balance: "w-full text-left mt-2 ml-2",
