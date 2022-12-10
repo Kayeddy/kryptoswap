@@ -2,6 +2,7 @@ import { useEthers, useEtherBalance } from "@usedapp/core";
 import styles from "./styles";
 import { KryptoswapLogo } from "./assets";
 import { Exchange, Loader, WalletButton } from "./components";
+import { usePools } from "./hooks";
 
 function App() {
   const { account } = useEthers();
