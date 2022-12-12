@@ -12,7 +12,7 @@ import { parseUnits } from "ethers/lib/utils";
 
 import { ROUTER_ADDRESS } from "ethers/lib/utils";
 
-const Exchange = () => {
+const Exchange = ({ pools }) => {
   return <div>Exchange</div>;
 };
 
