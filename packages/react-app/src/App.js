@@ -1,4 +1,4 @@
-import { useEthers, useEtherBalance } from "@usedapp/core";
+import { useEthers } from "@usedapp/core";
 import styles from "./styles";
 import { KryptoswapLogo } from "./assets";
 import { Exchange, Loader, WalletButton } from "./components";
